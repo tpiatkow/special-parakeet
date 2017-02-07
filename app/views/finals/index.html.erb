@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Finals</h1>
+
+<table class="table table-responsive">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Quanity</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @finals.each do |final| %>
+      <tr>
+        <td><%= final.name %></td>
+        <td><%= final.quanity %></td>
+        <td><%= link_to 'Show', final , class:"btn btn-xs btn-default" %></td>
+        <td><%= link_to 'Edit', edit_final_path(final) , class:"btn btn-xs btn-default" %></td>
+        <td><%= link_to 'Destroy', final, method: :delete, data: { confirm: 'Are you sure?' } , class:"btn btn-xs btn-danger" %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Final', new_final_path , class:"btn btn-info" %>

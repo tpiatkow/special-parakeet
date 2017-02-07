@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Finalboot</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body class= "container">
+      <nav class="navbar navbar-default">
+ 
+
+      <ul class="nav navbar-nav">
+
+        <li role="presentation"><a href="/">Home</a></li>
+        <li role="presentation"><a href="static_pages/users">Users</a></li>
+        <li role="presentation"><a href="/static_pages/help">Help</a></li>
+      </ul>
+      </nav>
+    <div>
+    <%= yield %>
+  </body>
+</html>

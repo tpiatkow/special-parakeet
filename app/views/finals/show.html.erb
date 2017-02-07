@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<div class="panel panel-primary">
+
+<div class="panel-heading">final</div>
+
+<div class="panel-body">
+
+
+<p>
+  <strong>Name:</strong>
+  <%= @final.name %>
+</p>
+
+
+<p>
+  <strong>Quanity:</strong>
+  <%= @final.quanity %>
+</p>
+
+
+</div>
+
+<div class="panel-footer">
+
+<%= link_to 'Edit', edit_final_path(@final) ,class:"btn btn-xs btn-default" %> |
+<%= link_to 'Back', finals_path , class:"btn btn-xs btn-default" %>
+
+</div></div>
